@@ -18,5 +18,8 @@
   "bugs": {
     "url": "https://github.com/service-bot/billflow-react/issues"
   },
-  "homepage": "https://github.com/service-bot/billflow-react#readme"
+  "homepage": "https://github.com/service-bot/billflow-react#readme",
+  "dependencies": {
+    "react": "^16.0.0"
+  }
 }

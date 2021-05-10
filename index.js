@@ -1,3 +1,5 @@
-const useBillflowEmbed = require('./hooks/useBillflowEmbed')
+import useBillflowEmbed from './hooks/useBillflowEmbed'
 
-exports.useBillflowEmbed = useBillflowEmbed
+export {
+    useBillflowEmbed
+}
