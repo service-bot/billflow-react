@@ -1,6 +1,6 @@
 {
   "name": "billflow-react",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Billflow React provides an easy way to integration with Billflow Embeddables via React Hooks",
   "main": "index.js",
   "scripts": {
