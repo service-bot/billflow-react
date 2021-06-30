@@ -34,7 +34,7 @@ const useBillflowEmbed = (props) => {
     return () => {
       cleanupBillflow();
     };
-  });
+  }, []);
 
   return { settings, cleanupBillflow };
 };
