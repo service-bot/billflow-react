@@ -1,7 +1,7 @@
 import { useEffect } from "react";
 
 const useBillflowEmbed = (props) => {
-  const { settings } = props;
+  const { settings, beta } = props;
 
   /**
    * clean up billflow scripts and styles from the dom
@@ -20,9 +20,12 @@ const useBillflowEmbed = (props) => {
     window.servicebotSettings = {
       ...settings
     };
+    const liveURL = "https://js.billflow.io/billflow-embed.js"
+    const betaURL = "https://js.billflow.io/beta/billflow-embed.js"
+    const jsURL = beta ? betaURL : liveURL
     (function () {
       var s = document.createElement("script");
-      s.src = "https://js.billflow.io/billflow-embed.js";
+      s.src = jsURL;
       s.async = true;
       s.type = "text/javascript";
       s.id = "servicebot-embed-js";
