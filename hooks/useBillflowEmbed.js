@@ -22,7 +22,7 @@ const useBillflowEmbed = (props) => {
     };
     const liveURL = "https://js.billflow.io/billflow-embed.js"
     const betaURL = "https://js.billflow.io/beta/billflow-embed.js"
-    const jsURL = beta ? betaURL : liveURL
+    const jsURL = beta ? betaURL : liveURL;
     (function () {
       var s = document.createElement("script");
       s.src = jsURL;
